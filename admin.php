@@ -20,6 +20,5 @@ if($_SESSION['upr']!='admin'){
     <?php
     include 'menu.php'
     ?>
-    
 </body>
 </html>

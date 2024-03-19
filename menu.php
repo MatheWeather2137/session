@@ -5,7 +5,7 @@ echo $_SESSION['user'];
 ?>
 <ul>
 <li> <a href='/session/session/'>MAIN PAGE</a> </li>
-<li> <a href='/session/session/strona.php'>STRONA</a> </li>
+<li> <a href='/session/session/strona.php'>PAGE</a> </li>
 
 <?php
 if($_SESSION['upr']=='admin'){
@@ -15,7 +15,7 @@ if($_SESSION['upr']=='admin'){
 
 
 
-<li> <a href='/session/session/rejestracja.php'>REJESTRACJA</a> </li>
+<li> <a href='/session/session/rejestracja.php'>REGISTER</a> </li>
 
 <?php
 if(!$_SESSION['zalogowano']){

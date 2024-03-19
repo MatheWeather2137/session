@@ -15,20 +15,21 @@ session_start();
     </style>
 </head>
 <body>
+    <h1>MAIN PAGE</h1>
     <?php
     include 'menu.php'
     ?>
-    <form action="index.php" method="POST">
+    <!-- <form action="index.php" method="POST">
         <input type="text" name="sesja">
         <input type="submit" value="pozdro">
-    </form>
+    </form> -->
     <?php
-    $_SESSION["test"]="test";
-    echo $_SESSION["test"] . "<br>";
-    if(isset($_POST["sesja"])){
-    $_SESSION["test"]=$_POST["sesja"];
-    print_r($_SESSION);
-    }
+    // $_SESSION["test"]="test";
+    // echo $_SESSION["test"] . "<br>";
+    // if(isset($_POST["sesja"])){
+    // $_SESSION["test"]=$_POST["sesja"];
+    // print_r($_SESSION);
+    // }
     ?>
     <?php
     if(isset($_SESSION["licznik"])){
@@ -36,7 +37,7 @@ session_start();
     } else{
         $_SESSION["licznik"]=1;
     }
-    echo "Liczbi odwiedzeń: " . $_SESSION["licznik"] . "<br>";
+    echo "Liczba odwiedzeń: " . $_SESSION["licznik"] . "<br>";
     ?>
     <form action="" method="POST">
         <button type="submit" name="bgColor" value="ciemny">Ciemny</button>

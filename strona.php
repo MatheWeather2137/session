@@ -15,6 +15,7 @@ session_start();
     </style>
 </head>
 <body>
+    <h1>PAGE</h1>
     <?php
     include 'menu.php'
     ?>
